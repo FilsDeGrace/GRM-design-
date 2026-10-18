@@ -1,0 +1,28 @@
+{
+  "name": "GameLedger current theme",
+  "note": "Keep this palette and character. Light is the default; dark must have full parity. Contrast target is WCAG AA.",
+  "light": {
+    "bg": "#f3f5f2", "surface": "#ffffff", "surfaceRaised": "#e8eeea", "border": "#ccd6d1",
+    "text": "#111a1e", "textMuted": "#52626a",
+    "signal": "#805700", "intelligence": "#4b57a9", "live": "#076d7a",
+    "positive": "#096b51", "negative": "#b33c35", "open": "#205d9a",
+    "locked": "#5a6971", "pending": "#6144b1", "void": "#8b5a32"
+  },
+  "dark": {
+    "bg": "#0c1115", "surface": "#121b20", "surfaceRaised": "#1a272e", "border": "#2c3b42",
+    "text": "#f0f4f2", "textMuted": "#a1afb4",
+    "signal": "#ffcc66", "intelligence": "#9aa8ff", "live": "#69d4e0",
+    "positive": "#66d3a9", "negative": "#ff8278", "open": "#7cb9ff",
+    "locked": "#a1afb4", "pending": "#b7a4ff", "void": "#d9a477"
+  },
+  "radius": { "sm": 6, "md": 9, "lg": 12 },
+  "type": {
+    "interface": "Inter, system-ui, sans-serif",
+    "scale": { "meta": 11, "label": 12, "body": 13, "title": 15, "screen": 18, "hero": 24 },
+    "weights": [400, 600],
+    "figures": "tabular numerals in the interface font; monospace only for codes and wallet addresses"
+  },
+  "spacing": "8px grid; screen padding 16; card padding 14 to 16",
+  "touch": "minimum 44px targets",
+  "phone": "design at 390 x 844 and check 360 x 800 and 430 x 932"
+}
