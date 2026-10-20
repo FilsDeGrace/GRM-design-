@@ -1,10 +1,10 @@
-# Screen prompts for UX Pilot
+# Screen prompts for UX Pilot (v2, S1 to S29)
 
 Paste the **Global Context** first in every new session. Then paste one screen prompt at a time. Generate S1 first and get it approved before the rest.
 
 ## Global Context
 ```
-Design a mobile-first (390x844) app called GameLedger, a global football app with two modes: Markets (live prediction markets on match stats, staked in a TEST token on a test network) and Tips (pre-match tipsters and a prediction model called GRM). This is a football app, not a crypto exchange: every screen must read as football at a glance (fixtures, live score and match minute, kickoff times, fictional team badges, window ranges like 65'-80', corner and card counts) and must not show candlestick charts, order books, Buy/Sell tabs, leverage or price tickers. Look and feel: the calm, dense, premium clarity of a modern trading app, applied to football content, with our own identity. A thin match-window rail (a timeline of the match with the market window highlighted) is part of the identity on market cards. Use the attached tokens (warm gold accent, light theme default, dark parity), Inter-style type on this scale: 11, 12, 13, 15, 18, 24, weights 400 and 600, tabular figures. Calm density, hairline dividers, few boxes, 44px touch targets, radius 12, 8px grid. Take patterns (not logos, icons, wording or colors) from the reference screenshots. Header: logo, a full-width mode switch (Markets | Tips), balance chip and avatar (guests see Sign in). Bottom nav per mode: Markets = Live, Positions, Results; Tips = Tipsters, GRM, Tickets. Fictional teams only, no real brands, no region-specific names. Show a sample size next to every percentage. Never expand the letters GRM.
+Design a mobile-first (390x844) app called GameLedger, a global football app with two modes: Markets, named IN-90 Football (live prediction markets on match stats, staked in a TEST token on a test network), and Tips (an X-like social platform for pre-match tipsters, news and banter, plus a prediction model called GRM). This is a football app, not a crypto exchange: every screen must read as football at a glance (fixtures, live score and match minute, kickoff times, fictional team badges, window ranges like 65'-80', corner and card counts) and must not show candlestick charts, order books, Buy/Sell tabs, leverage or price tickers. Look and feel: the calm, dense, premium clarity of a modern trading app, applied to football content, with our own identity. A thin match-window rail (a timeline of the match with the market window highlighted) is part of the identity on market cards. Use the attached tokens (warm gold accent, light theme default, dark parity), Inter-style type on this scale: 11, 12, 13, 15, 18, 24, weights 400 and 600, tabular figures. Calm density, hairline dividers, few boxes, 44px touch targets, radius 12, 8px grid. Take patterns (not logos, icons, wording or colors) from the reference screenshots. Header: logo, a full-width mode switch (Markets | Tips), balance chip and avatar (guests see Sign in). Bottom nav per mode: Markets = Live, Positions, Results; Tips = Tipsters, GRM, Tickets. Fictional teams only, no real brands, no region-specific names. Show a sample size next to every percentage. Never expand the letters GRM.
 ```
 
 ## S1. Markets: Live list (HERO SCREEN, do this first)
@@ -85,4 +85,69 @@ Show both ways to switch between Markets and Tips on the Live and Tipsters scree
 ## S16. Ops console (desktop 1440x900)
 ```
 Desktop admin console with a left rail (Markets, Templates, Feeds, Disputes, Creators, Audit log). Market list with state filter chips and a table: market, fixture, state, pool, lock time, feed status, actions. A market detail view with state timeline, pool split, feed events, void and settle actions that require a reason, and an audit trail. Dense, calm, same tokens.
+```
+
+## S17. Tips Home feed (X-like)
+```
+Tips mode, Home tab. Header with mode switch (Tips selected), balance chip and avatar. Underlined tabs: General, News, Community tips, with a swipe hint to a Subscribers-only feed. Sport filter chips (All, Football, Basketball, NFL, Tennis). A feed of post cards: avatar, name, badge (Verified Creator, Trial or Official), time, text, optional attached ticket (legs, total odds, live status chip), and an action row (like, comment, tip, share). Show variants: a normal post, a post with a ticket that has settled as won, a Promoted post (clearly labeled), an automated Official GRM post (digest of top-league fixtures with an attached ticket), and a Subscribers-only post locked for a non-subscriber. Raised "+" compose button in the bottom bar. Bottom nav: Home, Creators, GRM, Tickets.
+```
+
+## S18. Post composer
+```
+Full-screen composer. Text field with character count. Audience toggle: General or Subscribers only (subscribers option only for creators). Attach a pre-match ticket (pick legs, then it shows odds; note that it locks at kickoff and cannot be edited). Tags for sport and league. A one-line notice: "Tips are opinions, not guarantees." Show states: empty, filled, blocked by the rules (banned word, too many links, guaranteed-win claim) with a clear inline message, and posting.
+```
+
+## S19. Creator profile (X-like)
+```
+A creator profile: banner, avatar, name, Verified Creator badge, bio, counts (followers, following, subscribers). Analytics strip: ROI, hit rate, sample size, average odds, streak, specialties, each with its sample size. Buttons: Follow, Subscribe, Tip. Tabs: General, Subscribers only, Picks, About. Subscribers-only tab shows locked previews to non-subscribers. Show light and dark, and the Official GRM profile variant (automated, with a link to open GRM Pro).
+```
+
+## S20. Post detail and comments
+```
+A single post with its comments thread. Reactions (like and a laugh reaction), a tip button, a report menu. Show moderation states: comment hidden by the author, comment removed by moderators with a reason, and a rate-limit notice when commenting too fast.
+```
+
+## S21. Tip sheet with PIN
+```
+A bottom sheet to tip a creator or a post author: quick amounts (1, 5, 10 TEST), custom amount with no limit, optional short message, a confirm button. After confirm, a PIN entry step (6-digit keypad, dots, "Forgot PIN"). Then pending, success and failed states. Show the wrong-PIN state ("Wrong PIN, 3 tries left") and the locked state ("Too many tries, try again in 15 minutes"). Also the "Tip received" notification row.
+```
+
+## S22. Leaderboards
+```
+A leaderboards screen with tabs: Top earners (IN-90 Football), Overall (live), Top creators, Top community tipsters. Window chips: Week, Month, All-time. Sport chips. Rows: rank, avatar, name with badge, ROI with sample size, change arrow, and a low-sample marker. A pinned "Your rank" card at the bottom with a Hide me option. A minimum-sample note explains why some users are unranked.
+```
+
+## S23. IN-90 Room (Markets mode)
+```
+Markets mode, Room tab. Match context header (teams, score, minute) and a pinned rules strip. Tabs: Chat and Thesis. Chat: message bubbles with avatars, a slow-mode indicator, a "Chat is not advice" reminder, a system message "Market locked, chat is quiet for 30 seconds", mute and report on long-press, and an inline error when a message contains blocked language or begging. Thesis tab: short thesis posts with an optional "I staked 50 on HFC" proof chip, likes and comments. Bottom nav: Live, Positions, Leaders, Room.
+```
+
+## S24. Reach (promote a post)
+```
+Creator tool to promote a post: choose a post, choose a target (a match or a date), budget in TEST, duration, estimated reach, and a preview of the Promoted label in the feed. A rules checklist (record requirement, no guaranteed-win claims). Then a campaigns list with status (in review, live, ended) and stats (views, follows, subscribers gained).
+```
+
+## S25. Notifications inbox
+```
+Notifications list with filter chips (All, Markets, Social, Money). Items: market settled, claim available, new reply, new follower, new subscriber, tip received, subscription expiring, promotion approved, report outcome. Read and unread states, plus an empty state.
+```
+
+## S26. Sport selector
+```
+Show how the sport switches in both modes: in Markets mode the header shows "IN-90 Football" with a sport switcher (other sports shown as coming soon, names not decided); in Tips mode a row of sport filter chips on Home and Creators. Include an onboarding step where a new user picks sports and leagues.
+```
+
+## S27. Safety and moderation UI
+```
+User-facing safety screens: a report sheet (reason list, optional note), block and mute confirmation, community rules sheet, new-account limit notice (for example, links are restricted for 7 days), an 18+ confirmation step, and responsible-play settings (daily stake limit, cool-off, self-exclusion) with a reality-check prompt after a long session.
+```
+
+## S28. Ops: moderation and ads (desktop 1440x900)
+```
+Desktop admin screens in the same style: a moderation queue (reports with post preview, author history, actions: remove, warn, mute, ban, with reason and an audit entry), an ads review queue (promoted posts awaiting approval with the rules checklist), and a creator verification review. Dense, calm.
+```
+
+## S29. Transaction PIN
+```
+PIN screens: set a 6-digit PIN (enter, confirm, mismatch error, a note that the PIN protects tips if someone gets into the account), a PIN entry sheet used before a tip, wrong-PIN and locked states, and a reset flow (email code, then wallet signature, then new PIN). Also a Me > Security row to change or reset the PIN. A numeric keypad with large 44px keys, masked dots, and no PIN shown on screen.
 ```

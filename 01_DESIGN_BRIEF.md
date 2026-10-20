@@ -8,11 +8,22 @@
 
 ## 1. Product
 GameLedger is a global, onchain football app with two modes in one mobile-first PWA:
-- **Markets mode:** live head-to-head prediction markets on match stats (for example, which team wins more corners between minute 65 and 80). Users stake test tokens into two-sided pools. Markets lock, run, settle from data, and can be voided.
+- **Markets mode (named IN-90 Football):** live head-to-head prediction markets on match stats (for example, which team wins more corners between minute 65 and 80). Users stake test tokens into two-sided pools. Markets lock, run, settle from data, and can be voided.
 - **Tips mode:** pre-match football tips. Verified tipsters post tickets (legs, odds, bookmaker, booking code, analysis) with a data-settled public record. A GRM section shows a prediction model's pre-match top parlays and single picks. Users can edit a GRM ticket lightly and book it through a bookmaker to get a booking code and link.
 - An **Ops console** (desktop) manages markets, feeds, disputes, creators and the audit log.
 
 Audience: global, mobile-first people who already use trading, betting or prediction apps. They want speed, clarity and trust. Fictional teams only. No region-specific names, currencies or brands. Amounts are a test stablecoin labeled TEST on a test network (Base Sepolia).
+
+## 1a. Community layer, tipping and safety
+- **Tips mode is also an X-like social platform.** Anyone can post General content (tips, news, thesis, banter) for free. Creators can post **Subscribers only** content. Posts have likes, comments, following, followers, subscribers, and a peer **tip** button. A verified creator has a profile with banner, avatar, name, bio, an analytics strip (ROI, hit rate, sample size, average odds, specialties) and tabs for General and Subscribers only. Users swipe between General and Subscribers-only feeds. Home sections: General, News, Community tips.
+- **Three badges:** Verified Creator (passed a performance trial), Trial, and Official (platform accounts such as GRM). GRM is an official, verified account that posts automated pre-match predictions and tickets.
+- **Posts can attach a pre-match ticket** (legs, odds). It locks at kickoff and settles automatically, showing won, lost or void on the post.
+- **Reach:** verified creators can pay to promote a post. Promoted posts are always labeled.
+- **Leaderboards:** top earners in the live markets, overall top earners, top verified creators, top community tipsters.
+- **Markets mode is named "IN-90 Football"** (the live football prediction market), with its own community Room (chat and thesis posts). Other sports follow later; their names are not decided, so show them only as "coming soon".
+- **Tipping** uses the TEST token with no cap, and every tip requires a transaction PIN (a 6-digit code the user sets), in addition to the wallet confirmation.
+- **Multi-sport:** football first. NBA, NFL and tennis posts, tips and news come later, so sport filters and a sport selector must exist in the design.
+- **Safety is part of the design:** report, block and mute, new-account limits, banned-word feedback, rules sheet, 18+ and responsible-play prompts.
 
 ## 2. Design direction
 Goal: the clarity and premium calm of a modern trading app, applied to football content, in our own identity.
